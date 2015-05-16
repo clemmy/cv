@@ -35,7 +35,7 @@
 % - \information{pieceofinfo}{pic/rightpic/space/none}{character} - Displays a piece of information pre/post-fixed with a 'character' symbol (pic), or leading space (space) or nothing (none).
 % characters: phone = \Telefon, letter = \Letter, email = \MVAt, URL = \Flatsteel, twitter = $\mathcal{T}$
 % NOTE: at the moment if you specify 'none' for the type, you still should put a non breaking space for 'character'
-\newcommand{\information}[3]{
+	\newcommand{\information}[3]{
 		\ifthenelse{\equal{#2}{pic}}
 			{#3~ }
 			{\ifthenelse{\equal{#2}{space}}
@@ -50,7 +50,7 @@
 % \cvheaderseperator{a}{b}{c}: Creates a horizontal rule separator where 'a' is the thickness, 'b' is the spacing above and 'c' is the spacing below.
 \newcommand{\cvheaderseperator}[3]{\\[#2]\rule{\linewidth}{#1}\\[#3]}
 
-% \cvskill{skill}{type}: Creates a 'skill' bullet. 'skill' is the actual skill text and 'type' is one of 'full', 'semi' or 'none' to indicate whether a full, half-full or empty bullet circle should be used. 
+% \cvskill{skill}{type}: Creates a 'skill' bullet. 'skill' is the actual skill text and 'type' is one of 'full', 'semi' or 'none' to indicate whether a full, half-full or empty bullet circle should be used.
 \newcommand{\cvskill}[2]{\hspace{4mm}%
 	\ifthenelse{\equal{#2}{full}}%
 		{\CIRCLE~ }%
@@ -67,7 +67,7 @@
 	}
 
 % \cvpub{Authors}{Title}{Date}{Journal/Conference}{Pages}: Create a publication entry
-\newcommand{\cvpub}[5]{#1. (#3) ``#2'' \emph{#4}, pages #5} 
+\newcommand{\cvpub}[5]{#1. (#3) ``#2'' \emph{#4}, pages #5}
 
 % \cvcompany{Name}{Date}: A new company in the experience section
 \newcommand{\cvcompany}[2]{\textbf{#1}\hspace{\stretch{3}}{(#2)}}
@@ -89,21 +89,16 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 \cvtitle{Clement Hoang}{BrickRed}{BSc, MA}{0.5cm}
-\positionedbox{left}{0.7\textwidth}{%
-% 	\information{+12 345 6789, +12 345 6789}{pic}{\Telefon}\\%
-	\information{+12 345 6789, +12 345 6789}{pic}{\Mobilefone}\\%
-	\information{me@mail.com}{pic}{\MVAt}\\%
-	\information{http://www.github.com}{pic}{\Flatsteel}\\%
-	\information{http://www.twitter.com/username}{pic}{$\mathcal{T}$}\\%
+\positionedbox{left}{0.7\textwidth}{
+	\begin{tabular}{ c l }
+		{\FA \faMobile} & 647 871 8336 \\
+		{\FA \faEnvelope} & c8hoang@uwaterloo.ca \\
+		{\FA \faGithub} & https://github.com/clemmy
+	\end{tabular}
 }
-\positionedbox{right}{0.3\textwidth}{DOB: DD/MM/YY\\Nationality: XYZ}
-%
 \cvheaderseperator{0.5mm}{0.5cm}{0.2cm}
 
 % Contents Go Here
-{\FA \faTwitter }
-% \twitter
-delete me
 
 % Personal Statement
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus odio turpis, interdum sed luctus sit amet, accumsan a ante. Aenean ac augue in sem tincidunt malesuada. Aliquam dictum volutpat leo, et pellentesque metus tincidunt nec. Proin dolor diam, pellentesque ac molestie consectetur, tempus id neque. Mauris semper semper nisl, nec pulvinar dolor vehicula quis. Cras sagittis varius tempor.
