@@ -48,8 +48,8 @@
 
 \newcommand{\cvproject}[3]{\textbf{\href{#2}{#1}}\hspace{\stretch{3}}{#3}}
 
-% \cvhackathonproject{ProjectName}{HackathonName}: A new hackathon project in the Hackathons section
-\newcommand{\cvhackathonproject}[2]{\textbf{#1} @{#2}}
+% \cvhackathonproject{ProjectName}{HackathonName}{tags}: A new hackathon project in the Hackathons section
+\newcommand{\cvhackathonproject}[4]{\href{#2}{\textbf{#1}} @{#3} {#4}}
 
 % \cvhackathonproject{Year}{Award}: A new award in the Awards section
 \newcommand{\cvaward}[2]{\textbf{#1} & {#2}}
@@ -131,19 +131,19 @@
 \cvsectiontitle{Hackathons}
 \vspace{-0.8cm}
 \begin{itemize}[leftmargin=0.5cm]
-\item \cvhackathonproject{lookup}{NASA SpaceApps 2015 \#Best Pebble Hack Award \#Honourable Mention}\cvsublevel{
+\item \cvhackathonproject{lookup}{https://github.com/Clemmy/lookup}{NASA SpaceApps 2015}{\href{https://twitter.com/SpaceAppsTO/status/587444439276191744}{\#Best Pebble Hack Award \#Honourable Mention}}\cvsublevel{
 	\cvsubbullet{Built an IOS app that notifies users about the latest transient events based on VOEvents and webscraping, with Pebble support}
 	\cvsubbullet{Used Objective C, Pebble SDK, Express, Cheerio.js}
 }
-\item \cvhackathonproject{amusement}{HackWestern 2015 \#Best Muse Hack Award}\cvsublevel{
+\item \cvhackathonproject{amusement}{https://github.com/Clemmy/amusement}{HackWestern 2015}{\href{http://challengepost.com/software/amusement-um9im}{\#Best Muse Hack Award}}\cvsublevel{
 	\cvsubbullet{A mobile web application that keeps users in a calm state by analyzing their EEG activity and playing music from their Spotify playlists correspondingly}
 	\cvsubbullet{Used Angular, Express, Spotify API, Muse SDK}
 }
-\item \cvhackathonproject{vreq}{EngHack 2014}\cvsublevel{
+\item \cvhackathonproject{vreq}{https://github.com/jasonf7/VReq}{EngHack 2014}{}\cvsublevel{
 	\cvsubbullet{A visualization of course pre-requisites given a certain course at the University of Waterloo}
 	\cvsubbullet{Used D3.js, jQuery, UWaterloo Open Data API}
 }
-\item \cvhackathonproject{favors}{Hack the North 2014}\cvsublevel{
+\item \cvhackathonproject{favors}{https://github.com/raywan/favors}{Hack the North 2014}{}\cvsublevel{
 	\cvsubbullet{A platform for exchanging favors with people online and a social experiment to determine the standardized worth of a favor}
 	\cvsubbullet{Used Python with Flask, Java with Android SDK, Facebook SDK, MySQL}
 }
