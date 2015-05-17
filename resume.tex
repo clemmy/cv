@@ -45,6 +45,9 @@
 % \cvcompany{Name}{Date}: A new company in the experience section
 \newcommand{\cvcompany}[2]{{#1}\hspace{\stretch{3}}{(#2)}}
 
+% \cvhackathonproject{ProjectName}{HackathonName}: A new hackathon project in the Hackathons section
+\newcommand{\cvhackathonproject}[2]{{#1} @{#2}}
+
 % \cvsublevel{Text}: Create an indented item list
 \newcommand{\cvsublevel}[1]{\begin{itemize}[leftmargin=0.5cm] #1\end{itemize}}
 
@@ -116,8 +119,27 @@
 [\textbf{Databases}] MongoDB, MySQL, SQLite, T-SQL \\[0.2cm]
 [\textbf{Tools}] Git, Bower, Grunt, Gulp, Bash
 
+
+\cvsectiontitle{Hackathons}
+\vspace{-0.8cm}
+\begin{itemize}[leftmargin=0.5cm]
+\item \cvhackathonproject{lookup}{NASA SpaceApps 2015 \#Best Pebble Hack Award \#Honourable Mention}\cvsublevel{
+	\cvsubbullet{Built an IOS app that notifies users about the latest transient events based on VOEvents and webscraping, with Pebble support}
+	\cvsubbullet{Used Objective C, Pebble SDK, Express, Cheerio.js}
 }
+\item \cvhackathonproject{amusement}{HackWestern 2015 \#Best Muse Hack Award}\cvsublevel{
+	\cvsubbullet{A mobile web application that keeps users in a calm state by analyzing their EEG activity and playing music from their Spotify playlists correspondingly}
+	\cvsubbullet{Used Angular, Express, Spotify API, Muse SDK}
 }
+\item \cvhackathonproject{vreq}{EngHack 2014}\cvsublevel{
+	\cvsubbullet{A visualization of course pre-requisites given a certain course at the University of Waterloo}
+	\cvsubbullet{Used Angular, Express, Spotify API, Muse SDK}
+}
+\item \cvhackathonproject{favors}{Hack the North 2014}\cvsublevel{
+	\cvsubbullet{A platform for exchanging favors with people online and a social experiment to determine the standardized worth of a favor}
+	\cvsubbullet{Used Python with Django, Android SDK, MySQL}
+}
+\end{itemize}
 
 % Personal information, hobbies etc
 \cvsectiontitle{About Me}
