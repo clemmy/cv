@@ -44,7 +44,7 @@
 % \cvsectiontitle{title}: Creates a section with the given title.
 \newcommand{\cvsectiontitle}[1]{%
 	\rule{\linewidth}{0.2mm}\\%
-		{\large\indent\textsc{#1}}\\%
+		{\large\indent\textbf{#1}}\\%
 	\\[-6mm]\rule{\linewidth}{0.2mm}\\[2mm]%
 	}
 
@@ -52,7 +52,7 @@
 \newcommand{\cvpub}[5]{#1. (#3) ``#2'' \emph{#4}, pages #5}
 
 % \cvcompany{Name}{Date}: A new company in the experience section
-\newcommand{\cvcompany}[2]{\textbf{#1}\hspace{\stretch{3}}{(#2)}}
+\newcommand{\cvcompany}[2]{{#1}\hspace{\stretch{3}}{(#2)}}
 
 % \cvsublevel{Text}: Create an indented item list
 \newcommand{\cvsublevel}[1]{\begin{itemize}[leftmargin=0.5cm] #1\end{itemize}}
@@ -70,7 +70,7 @@
 %                                    Content                                       %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
-\cvtitle{Clement Hoang}{BrickRed}{}{0.5cm}
+\cvtitle{Clement \textbf{Hoang}}{BrickRed}{}{0.5cm}
 \positionedbox{left}{0.7\textwidth}{
 	\begin{tabular}{ c l }
 		{\FA \faPhone} & 647 871 8336 \\
