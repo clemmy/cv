@@ -40,10 +40,13 @@
 	}
 
 % \cvcompany{Name}{Date}: A new company in the experience section
-\newcommand{\cvcompany}[2]{{#1}\hspace{\stretch{3}}{#2}}
+\newcommand{\cvcompany}[2]{\textbf{#1}\hspace{\stretch{3}}{#2}}
 
 % \cvhackathonproject{ProjectName}{HackathonName}: A new hackathon project in the Hackathons section
-\newcommand{\cvhackathonproject}[2]{{#1} @{#2}}
+\newcommand{\cvhackathonproject}[2]{\textbf{#1} @{#2}}
+
+% \cvhackathonproject{Year}{Award}: A new award in the Awards section
+\newcommand{\cvaward}[2]{\textbf{#1} & {#2}}
 
 % \cvsublevel{Text}: Create an indented item list
 \newcommand{\cvsublevel}[1]{\begin{itemize}[leftmargin=0.5cm] #1\end{itemize}}
@@ -152,12 +155,12 @@
 \vspace{-2.5mm}
 \cvsectiontitle{Awards}
 \begin{tabular}{ c l }
-	2015 & Honourable Mention and Best Pebble Hack at NASA SpaceApps \\
-	2015 & Best Muse Hack at HackWestern \\
-	2014 & Dean's Honours List at University of Waterloo\\
-	2013 & President's Scholarship at University of Waterloo\\
-	2011 & HB Blizzard Computer Science Award \\
-	2010 & Top 64 in Junior Canadian Computing Competition Stage 1
+	\cvaward{2015}{Honourable Mention and Best Pebble Hack at NASA SpaceApps} \\
+	\cvaward{2015}{Best Muse Hack at HackWestern} \\
+	\cvaward{2014}{Dean's Honours List at University of Waterloo} \\
+	\cvaward{2013}{President's Scholarship at University of Waterloo} \\
+	\cvaward{2011}{HB Blizzard Computer Science Award} \\
+	\cvaward{2010}{Top 64 in Junior Canadian Computing Competition Stage 1}
 \end{tabular}
 
 \vspace{2mm}
