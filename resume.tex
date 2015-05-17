@@ -32,15 +32,6 @@
 		\end{flush#1}
 	\end{minipage}}
 
-% \cvskill{skill}{type}: Creates a 'skill' bullet. 'skill' is the actual skill text and 'type' is one of 'full', 'semi' or 'none' to indicate whether a full, half-full or empty bullet circle should be used.
-\newcommand{\cvskill}[2]{\hspace{4mm}%
-	\ifthenelse{\equal{#2}{full}}%
-		{\CIRCLE~ }%
-		%else%
-		{\ifthenelse{\equal{#2}{semi}}%
-			{\LEFTcircle ~ }%
-			{\Circle ~ }}#1\\}
-
 % \cvsectiontitle{title}: Creates a section with the given title.
 \newcommand{\cvsectiontitle}[1]{%
 	\rule{\linewidth}{0.2mm}\\%
