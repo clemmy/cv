@@ -1,0 +1,15 @@
+Dear Amazon Recruiting Team,
+
+I am super excited to hear that Amazon is hiring for a software development and analytics internship! My name is Clement Hoang and I am a software engineering student from the University of Waterloo, writing to express my interest in the aforementioned position. As a lover of software and a frequent Amazon user, I greatly appreciate the technology innovated by Amazon, and would love to be given the opportunity to demonstrate my skills and make a difference at Amazon.
+
+Throughout my academic experience, I am continuously developing my expertise in C, C++, and Java, and use it in a slew of courses involving algorithms and object oriented paradigms. Although my experience in big data technologies such as Hadoop is limited, I have been described by many as a fast learner.
+
+For example, in my previous internship at Ten Thousand Coffees, a blooming startup that focuses on social networking, I was hired while I had limited experience with their tech stack. However, I quickly adapted to it in a week and began implementing features such as analytics tracking and group messaging, leading to me playing an important role in the company growth.
+
+I also like to learn about new things in my free time. I have been playing around with a lot of Javascript frameworks, such as Meteor, Electron, and React, as well as going through Andrew Ng's machine learning course on Coursera. With great curiosity, a drive to create, fast learning, and adeptness in statistics, I would like to challenge myself working for Amazon's team.
+
+Enclosed is my resume, and I hope you'll buy me as much as I buy things on Amazon.
+
+Sincerely,
+
+Clement Hoang
