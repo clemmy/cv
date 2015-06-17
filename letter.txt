@@ -1,0 +1,12 @@
+Dear Asana Recruiting Team,
+
+If you could please take a few minutes of your time to read my letter, that would be wonderful!
+
+My name is Clement Hoang, and I'm a second year software engineering student from the University of Waterloo. I first heard of Asana during my last internship, when our company was looking to improve the current team collaboration software. In the end, we didn't make the switch, but from that day forward, I knew that whenever I needed to make the choice again, Asana would be my go-to solution.
+
+Currently, I am seeking an internship for the Fall term, and would love to have the opportunity to work for Asana. In the past, I have had two internship experiences, as well as some freelance web development work for a startup on the side. At the moment, I am most comfortable with Javascript; and have leveraged many frameworks including Meteor, Angular, and Express, to create web applications for side projects (Hearthnet with Meteor), hackathons (amusement with MEAN stack), and features such as group messaging at my past internships. However, I am an intrinsic learner, and am always exploring new technologies. At the moment, I am following Andrew Ng's machine learning course on Coursera, as well as playing around with Electron and React.
+
+I love to challenge myself, and I believe that as Asana, I would be able to put my skills to good use while solving meaningful problems. You can view my Github at https://github.com/Clemmy and my resume at http://clementhoang.net/assets/resume.pdf. I would love to be a part of your team. In my resume, you can find my contact details should you find me a suitable candidate.
+
+Sincerely,
+Clement Hoang
