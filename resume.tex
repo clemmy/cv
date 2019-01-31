@@ -49,7 +49,7 @@
 \newcommand{\cvproject}[3]{\textbf{\href{#2}{#1}}\hspace{\stretch{3}}{#3}}
 
 % \cvhackathonproject{ProjectName}{HackathonName}{tags}: A new hackathon project in the Hackathons section
-\newcommand{\cvhackathonproject}[4]{\href{#2}{\textbf{#1}} @{#3} \color{BrickRed}\textit{#4} \color{Black}}
+\newcommand{\cvhackathonproject}[4]{\href{#2}{\textbf{#1}} {#3} \color{BrickRed}\textit{#4} \color{Black}}
 
 % \cveducation{Name}{Date}: A new school in the education section
 \newcommand{\cveducation}[2]{\textbf{#1} \hspace{\stretch{3}}{#2}}
@@ -77,11 +77,11 @@
 \cvtitle{Clement \textbf{Hoang}}{BrickRed}{}{0.3cm}
 \positionedbox{left}{0.7\textwidth}{
 	\begin{tabular}{ c l }
-		{\FA \faPhone} & 647 871 8336 \\
-		{\FA \faEnvelope} & \href{mailto:c8hoang@uwaterloo.ca}{c8hoang@uwaterloo.ca} \\
+		{\FA \faPhone} & 415 335 3649 \\
+		{\FA \faEnvelope} & \href{mailto:clement.hoang24@gmail.com}{clement.hoang24@gmail.com} \\
 		{\FA \faGithub} & \href{https://github.com/clemmy}{https://github.com/clemmy} \\
 		{\FA \faLinkedIn} & \href{https://www.linkedin.com/in/clementhoang}{https://www.linkedin.com/in/clementhoang} \\
-		{\FA \faFire} & \href{http://clemmy.ninja}{http://clemmy.ninja}
+		{\FA \faFire} & \href{https://clementhoang.net}{https://clementhoang.net}
 	\end{tabular}
 }
 \vspace{0.2cm}
@@ -95,14 +95,27 @@
 \cvsectiontitle{Experience}
 \vspace{-0.8cm} % NOTE: There are spacing issues, not sure why, fix them with some vspace
 \begin{itemize}[leftmargin=0.5cm]
+
+\item \cvcompany{Credit Karma}{Software Engineer}{May 2015 - now}\cvsublevel{
+	\cvsubbullet{Working with Javascript ES6 to automate build tasks and modularize React components}
+	}
+\item \cvcompany{Facebook}{Freelance Web Developer}{May 2015 - now}\cvsublevel{
+	\cvsubbullet{Working with Javascript ES6 to automate build tasks and modularize React components}
+	}
+\item \cvcompany{Memebox}{Freelance Web Developer}{May 2015 - now}\cvsublevel{
+	\cvsubbullet{Working with Javascript ES6 to automate build tasks and modularize React components}
+	}
+\item \cvcompany{Zenreach}{Freelance Web Developer}{May 2015 - now}\cvsublevel{
+	\cvsubbullet{Working with Javascript ES6 to automate build tasks and modularize React components}
+	}
+\item \cvcompany{Datera}{Freelance Web Developer}{May 2015 - now}\cvsublevel{
+	\cvsubbullet{Working with Javascript ES6 to automate build tasks and modularize React components}
+	}
 \item \cvcompany{Ten Thousand Coffees}{Software Engineering Intern}{January 2015 - May 2015}\cvsublevel{
 	\cvsubbullet{Improved user retention on platform by using Mandrill for transactional and digest emails with Segment.io for analytics tracking}
 	\cvsubbullet{Made email verification architecture stateless by switching manually generated bcrypt verification tokens to JWT}
 	\cvsubbullet{Redesigned the entire messaging system to support multiple participants and an user-friendly scheduling system that was pushed to production}
 	\cvsubbullet{Added internationalization support for the entire application with angular-translate}
-	}
-\item \cvcompany{MappedIn}{Freelance Web Developer}{May 2015 - now}\cvsublevel{
-	\cvsubbullet{Working with Javascript ES6 to automate build tasks and modularize React components}
 	}
 \item \cvcompany{Write of Passage}{Freelance Web Developer}{May 2015 - June 2015}\cvsublevel{
 	\cvsubbullet{Working with designer to build a complete bilingual web application, including an admin panel, for a startup using the MEAN stack}
@@ -120,18 +133,6 @@
 \cvsectiontitle{Projects} %http://clementhoang.net/\#work
 \vspace{-0.8cm}
 \begin{itemize}[leftmargin=0.5cm]
-\item \cvproject{Hearthnet}{https://github.com/overworked/hearthnet}{January 2015 - now}\cvsublevel{
-	\cvsubbullet{A social platform for Hearthstone players to find other players with similar preferences}
-	\cvsubbullet{Built with Meteor, Sass, Bourbon, Neat, and MongoDB}
-}
-\item \cvproject{Chidori}{https://github.com/overworked/chidori}{April 2015 - now}\cvsublevel{
-	\cvsubbullet{A cross platform Yugioh client where players can duel against one another online}
-	\cvsubbullet{Built with Electron, Sass, Bourbon, Neat, and MySQL}
-}
-\item \cvproject{Rallly}{https://github.com/Clemmy/Rallly}{March 2015 - May 2015}\cvsublevel{
-	\cvsubbullet{Implemented time-specific event scheduling to a collaborative scheduling web application}
-	\cvsubbullet{Built with Node, Express, Angular, MongoDB, SCSS with Bourbon/Neat, and Moment.js}
-}
 \item \cvproject{BCQueue}{https://github.com/Clemmy/BCQueue}{July 2013 - October 2013}\cvsublevel{
 	\cvsubbullet{Feature-rich badminton club management software for Windows that features a members database, asynchronous court timers, and a queuing system}
 	\cvsubbullet{Built with WPF, C\#, .NET 4.0, XAML, Blend}
@@ -142,21 +143,21 @@
 \cvsectiontitle{Hackathons}
 \vspace{-0.8cm}
 \begin{itemize}[leftmargin=0.5cm]
-\item \cvhackathonproject{lookup}{https://github.com/Clemmy/lookup}{NASA SpaceApps 2015}{\href{https://twitter.com/SpaceAppsTO/status/587444439276191744}{\#Best Pebble Hack Award \#Honourable Mention}}\cvsublevel{
-	\cvsubbullet{Built an iOS app that notifies users about the latest transient events based on VOEvents and webscraping, with Pebble support}
-	\cvsubbullet{Used Objective C, Pebble SDK, Express, Cheerio.js}
+\item \cvhackathonproject{Pokidex}{http://www.hackathon.io/pokidex}{Winner at AngelHack Silicon Valley 2016}{}\cvsublevel{
+	\cvsubbullet{Mobile app where users can easily view important health insurance data and search for in-network healthcare providers}
+	\cvsubbullet{Used Swift, MongoDB, NodeJS}
 }
-\item \cvhackathonproject{amusement}{https://github.com/Clemmy/amusement}{HackWestern 2015}{\href{http://challengepost.com/software/amusement-um9im}{\#Best Muse Hack Award}}\cvsublevel{
-	\cvsubbullet{A mobile web application that keeps users in a calm state by analyzing their EEG activity and playing music from their Spotify playlists correspondingly}
-	\cvsubbullet{Used Angular, Express, Spotify API, Muse SDK}
+\item \cvhackathonproject{Query}{http://devpost.com/software/query-sctlva}{Winner at HackingEDU 2015}{}\cvsublevel{
+	\cvsubbullet{Pebble and web app that provides a real-time collaborative classroom layer on top of university lectures}
+	\cvsubbullet{Used Angular, ExpressJS, Websockets, Pebble SDK, Clusterpoint Cloud Database API}
 }
-\item \cvhackathonproject{vreq}{https://github.com/jasonf7/VReq}{EngHack 2014}{}\cvsublevel{
-	\cvsubbullet{A visualization of course pre-requisites given a certain course at the University of Waterloo}
-	\cvsubbullet{Used D3.js, jQuery, UWaterloo Open Data API}
+\item \cvhackathonproject{Amusement}{http://challengepost.com/software/amusement-um9im}{Winner at HackWestern 2015}{}\cvsublevel{
+	\cvsubbullet{App that analyzes your mental state while driving and keeps it healthy via controlling your music playlist}
+	\cvsubbullet{Used Angular, ExpressJS, Spotify API, Muse SDK}
 }
-\item \cvhackathonproject{favors}{https://github.com/raywan/favors}{Hack the North 2014}{}\cvsublevel{
-	\cvsubbullet{A platform for exchanging favors with people online and a social experiment to determine the standardized worth of a favor}
-	\cvsubbullet{Used Python with Flask, Java with Android SDK, Facebook SDK, MySQL}
+\item \cvhackathonproject{LookUp}{https://twitter.com/SpaceAppsTO/status/587444439276191744}{Winner at NASA SpaceApps 2015}{}\cvsublevel{
+	\cvsubbullet{iOS and Pebble app that displays live feed of transient space events}
+	\cvsubbullet{Used Objective C, Pebble SDK, ExpressJS, Cheerio.js}
 }
 \end{itemize}
 
